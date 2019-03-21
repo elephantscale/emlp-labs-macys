@@ -12,7 +12,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Workflow
 metadata:
-  generateName: als-spark-ml-andrea
+  generateName: YOURNAME-als-spark-ml-
 spec:
   entrypoint: start
   onExit: exit-handler                  #invoke exit-hander template at end of the workflow
