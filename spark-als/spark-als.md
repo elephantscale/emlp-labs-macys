@@ -180,6 +180,23 @@ git push
 https://platform-ci.devops.fds.com/jenkins/view/EMLP/view/Jobs/job/emlp-build/
 ```
 
-## Go find your job in Argo
+Wait until the job is finished building
+
+
+## Run the Workflow
+
+![](../images/helloworld7-run.png)
+
+## List Running
+![](../images/helloworld8-listrunning.png)
+
+## Start Apache Argo
+![](../images/helloworld9-argo.png)
+
+## Look at Logs
+
+![](../images/helloworld10-logs.png)
+
+
 
 
