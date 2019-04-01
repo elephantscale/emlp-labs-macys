@@ -30,17 +30,17 @@ Use your Macy's credentials
 
 ## Step 8: Run the Workflow
 
-[](../images/helloworld7-run.png)
+![](../images/helloworld7-run.png)
 
 ## Step 9: List Running
-[](../images/helloworld8-listrunning.png)
+![](../images/helloworld8-listrunning.png)
 
 ## Step 10: Start Apache Argo
-[](../images/helloworld9-argo.png)
+![](../images/helloworld9-argo.png)
 
 ## Step 11: Look at Logs
 
-[](../images/helloworld10-logs.png)
+![](../images/helloworld10-logs.png)
 
 
 Folowing this it should say "Hello World!"
