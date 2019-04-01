@@ -1,0 +1,140 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Workflow
+metadata:
+  generateName: $YOURNAME-spark-ml-als
+spec:
+  arguments:
+    parameters:
+    - name: image-version
+      value: latest
+  entrypoint: start
+  onExit: exit-handler
+  templates:
+  - container:
+      command:
+      - echo
+      - '{{inputs.parameters.message}}'
+      image: alpine:3.7
+    inputs:
+      parameters:
+      - name: message
+    name: echo
+  - dag:
+      tasks:
+      - dependencies: []
+        name: running-als
+        template: als-recommender
+      - dependencies: []
+        name: running-knn
+        template: knn-recommender
+    name: start
+  - container:
+      args:
+      - logs
+      - -w
+      - '{{workflow.name}}'
+      image: argoproj/argocli:latest
+      resources:
+        limits:
+          cpu: 200m
+          memory: 1Gi
+        requests:
+          cpu: 200m
+          memory: 1Gi
+    name: collect-logs
+    nodeSelector:
+      app: argologger
+    tolerations:
+    - effect: NoSchedule
+      key: argologger
+      operator: Exists
+  - name: exit-handler
+    steps:
+    - - name: notify
+        template: send-email
+      - name: wf-ok
+        template: success-action
+        when: '{{workflow.status}} == Succeeded'
+      - name: handle-error
+        template: failure-action
+        when: '{{workflow.status}} != Succeeded'
+  - container:
+      env:
+      - name: BODY
+        value: 'Argo workflow has been finished, name: {{workflow.name}}, status:
+          {{workflow.status}}'
+      - name: MAIL_TO
+        value: ''
+      - name: SUBJECT
+        value: 'argo workflow: {{workflow.name}}'
+      image: ci-artifacts.devops.fds.com/emlp/emlp-sendmail
+      resources:
+        limits:
+          cpu: 500m
+          memory: 1Gi
+        requests:
+          cpu: 500m
+          memory: 1Gi
+    name: send-email
+  - container:
+      args:
+      - echo on to the next workflow
+      command:
+      - sh
+      - -c
+      image: alpine:latest
+    name: success-action
+  - container:
+      args:
+      - 'echo ERROR: {{workflow.name}} {{workflow.status}}. After correcting the issue,
+        consider repeating the workflow with the retry option'
+      command:
+      - sh
+      - -c
+      image: alpine:latest
+    name: failure-action
+  - container:
+      image: ci-artifacts.devops.fds.com/emlp-stage/emlp-workshop-uid-30-als-recommender:{{workflow.parameters.image-version}}
+      resources:
+        limits:
+          cpu: 4000m
+          memory: 36Gi
+          nvidia.com/gpu: '0'
+        requests:
+          cpu: 4000m
+          memory: 36Gi
+          nvidia.com/gpu: '0'
+      volumeMounts:
+      - mountPath: /secrets
+        name: task-als-recommender-volume-1-my-secret-vol
+        readOnly: true
+    metadata:
+      labels:
+        argo-step: als-recommender
+    name: als-recommender
+  - container:
+      image: ci-artifacts.devops.fds.com/emlp-stage/emlp-workshop-uid-30-knn-recommender:{{workflow.parameters.image-version}}
+      resources:
+        limits:
+          cpu: 2000m
+          memory: 18Gi
+          nvidia.com/gpu: '0'
+        requests:
+          cpu: 2000m
+          memory: 18Gi
+          nvidia.com/gpu: '0'
+      volumeMounts:
+      - mountPath: /secrets
+        name: task-knn-recommender-volume-1-my-secret-vol
+        readOnly: true
+    metadata:
+      labels:
+        argo-step: knn-recommender
+    name: knn-recommender
+  volumes:
+  - name: task-als-recommender-volume-1-my-secret-vol
+    secret:
+      secretName: gcp
+  - name: task-knn-recommender-volume-1-my-secret-vol
+    secret:
+      secretName: gcp
