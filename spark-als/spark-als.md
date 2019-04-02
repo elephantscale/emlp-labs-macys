@@ -28,24 +28,24 @@ http://stage.emlp.macysdev.net/emlp
 ```
 
 
-[](../images/als-1-emlp.png)
+![](../images/als-1-emlp.png)
 
 ## Click on Add New
 
-[](../images/als-2-addnew.png)
+![](../images/als-2-addnew.png)
 
 ## Create the name
 
 
-[](../images/als-3-name.png)
+![](../images/als-3-name.png)
 
 ## Create the workflow
 
-[](../images/als-4-create.png)
+![](../images/als-4-create.png)
 
 ## Go to tasks
 
-[](../images/als-7-createtask1.png)
+![](../images/als-7-createtask1.png)
 
 ## Create 2 tasks
 
@@ -66,13 +66,13 @@ We don't need a volume so at the very end click "Create"
 
 Repeat the same for als-recommender.
 
-[](../images/als-8-taskname.png)
+![](../images/als-8-taskname.png)
 
 ## Create 2 Steps
 
 Go to steps:
 
-[](../images/als-9-createsteps.png)
+![](../images/als-9-createsteps.png)
 
 Create 2 Steps:
 
@@ -81,11 +81,11 @@ Create 2 Steps:
 
 Just accept defaults for both
 
-[](../images/als-10-addstep.png)
+![](../images/als-10-addstep.png)
 
 Here is what is should look like when you create the stps:
 
-[](../images/als-11-steps.png)
+![](../images/als-11-steps.png)
 
 
 
@@ -98,13 +98,13 @@ It should be at the following address [Gitlab](https://code.devops.fds.com/emlp-
 ```text
 https://code.devops.fds.com/emlp-stage
 ```
-[](../images/als-5-gitlab.png)
+![](../images/als-5-gitlab.png)
 
 ## Find your repo by name 
 
 You can use the filter option.
 
-[](../images/als-6-gitlabname.png)
+![](../images/als-6-gitlabname.png)
 
 
 ## Copy the repo name
