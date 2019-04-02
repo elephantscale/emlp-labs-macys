@@ -11,7 +11,7 @@ If you have already done the earlier lab here
 
 You should have the distributed tensorflow lab [here](./parallel-tensorflow.ipynb)
 
-[Download Link](./parallel-tensorflow.ipynb)
+[Download Link](https://raw.githubusercontent.com/elephantscale/emlp-labs-macys/master/parallel-tensorflow/parallel-tensorflow.ipynb)    You can right click and say **save as..**
 
 ![](../images/parallel-1-uploadfile.png)
 
