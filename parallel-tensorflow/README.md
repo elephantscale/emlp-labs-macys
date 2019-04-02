@@ -8,9 +8,9 @@ If you have already done the earlier lab here
 
 ## Step 2: Upload the file 
 
-You should have the distributed tensorflow lab [here](./distributed-tensorflow.ipynb)
+You should have the distributed tensorflow lab [here](./parallel-tensorflow.ipynb)
 
-[Download Link](./distributed-tensorflow.ipynb)
+[Download Link](./parallel-tensorflow.ipynb)
 
 You can upload this file to Jupyter
 
