@@ -56,6 +56,8 @@ Use the starter template `Python3-Pyspark2.4-Spark2.4-bq`
 
 Create a step for your task.
 
+Call it `s1`.
+
 
 
 ## Go to Gitlab
