@@ -46,7 +46,10 @@ Go to create a task.
 
 Create task by the name of "pyspark-task"
 
+Use the starter template `Python3-Pyspark2.4-Spark2.4-bq`
+
 ![](../images/wordcount-1-task.png)
+
 
 
 ## Create a step for your task
@@ -61,6 +64,27 @@ It should be at the following address [Gitlab](https://code.devops.fds.com/)
 
 ```text
 https://code.devops.fds.com/
+```
+
+
+## Look at the code
+
+It should be in the `pyspark-task/src/main.py` location:
+
+```python
+import findspark
+findspark.init("/opt/spark")
+
+from pyspark import SparkContext
+from operator import add
+
+sc = SparkContext()
+data = sc.parallelize(list("Hello World"))
+counts = data.map(lambda x: (x, 1)).reduceByKey(add).sortBy(lambda x: x[1], ascending=False).collect()
+for (word, count) in counts:
+    print("{}: {}".format(word, count))
+sc.stop()
+
 ```
 
 
