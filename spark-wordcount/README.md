@@ -96,7 +96,7 @@ sc.stop()
 ![](../images/helloworld8-listrunning.png)
 
 ## Start Apache Argo
-![](../images/helloworld9-argo.png)
+![](../images/wordcount-2-argo.png)
 
 ## Look at Logs
 
