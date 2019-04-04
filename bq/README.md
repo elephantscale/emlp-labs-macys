@@ -78,7 +78,16 @@ Make changes to the main.py file by copying [this file](./src/main.py)
 Add the following to the end of the `requirements.txt` file:
 
 ```text
-google-cloud
+google-cloud-bigquery
+```
+
+## Commit the results
+
+```bash
+git add t1/requirements.txt
+git add t1/src/main.py
+git commit
+git push
 ```
 
 
