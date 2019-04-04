@@ -55,6 +55,9 @@ You will need a volume for the secrets.  On the last step you will need to creat
 Use the dropdown for the secrets
 
 
+![](../images/modelstore-2.png)
+
+
 Go ahead and save.
 
 
