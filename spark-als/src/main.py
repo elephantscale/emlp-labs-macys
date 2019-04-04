@@ -38,13 +38,13 @@ spark = SparkSession \
 # get spark context
 sc = spark.sparkContext
 
-movies = spark.read.load('movies.csv', format='csv', header=True, inferSchema=True)
-ratings = spark.read.load('ratings.csv'), format='csv', header=True, inferSchema=True)
+movies = spark.read.load('src/movies.csv', format='csv', header=True, inferSchema=True)
+ratings = spark.read.load('src/ratings.csv', format='csv', header=True, inferSchema=True)
 #links = spark.read.load('links.csv'), format='csv', header=True, inferSchema=True)
 #tags = spark.read.load('tags.csv'), format='csv', header=True, inferSchema=True)
 
 # load data
-movie_rating = sc.textFile(os.path.join(data_path, 'ratings.csv'))
+movie_ratin  = spark.read.load('src/ratings.csv', format='csv', header=True, inferSchema=True)
 # preprocess data -- only need ["userId", "movieId", "rating"]
 header = movie_rating.take(1)[0]
 rating_data = movie_rating \
