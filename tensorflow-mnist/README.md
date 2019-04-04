@@ -161,7 +161,7 @@ git commit
 git push
 ```
 
-## Check jenkins to make sure it is there.
+## Check Jenkins to make sure it is there.
 
 
 ```text
@@ -169,6 +169,8 @@ https://platform-ci.devops.fds.com/jenkins/view/EMLP/view/Jobs/job/emlp-build/
 ```
 
 Wait until the job is finished building
+
+![](../images/jenkins.png)
 
 
 ## Run the Workflow

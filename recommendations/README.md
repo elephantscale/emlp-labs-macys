@@ -1,4 +1,4 @@
-# Spark ALS
+# Recommendations
 
 
 ## clone this repo on your computer
@@ -88,9 +88,6 @@ Here is what is should look like when you create the stps:
 ![](../images/als-11-steps.png)
 
 
-
-
-
 ## Go to Gitlab
 
 It should be at the following address [Gitlab](https://code.devops.fds.com/emlp-stage)
@@ -119,8 +116,6 @@ Copy that to your clipboard
 cd
 git clone git@code.devops.fds.com:emlp-stage/$YOURNAME-als-spark-ml.git
 ```
-
-
 
 
 ## Copy the files to the repository
@@ -181,6 +176,8 @@ https://platform-ci.devops.fds.com/jenkins/view/EMLP/view/Jobs/job/emlp-build/
 ```
 
 Wait until the job is finished building
+
+![](../images/jenkins.png)
 
 
 ## Run the Workflow
