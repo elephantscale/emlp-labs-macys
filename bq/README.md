@@ -23,10 +23,10 @@ This environment variable will make life easier. Remember this name that you use
 
 ## Go to EMLP Staging in your browser
 
-Go to [EMLP dev](http://dev.emlp.macysdev.net/emlp)
+Go to [EMLP stage](http://stage.emlp.macysdev.net/emlp)
 
 ```text
-http://dev.emlp.macysdev.net/emlp
+http://stage.emlp.macysdev.net/emlp
 ```
 
 ## Click on Add New
@@ -36,14 +36,6 @@ http://dev.emlp.macysdev.net/emlp
 ## Create the name
 
 Call it `YOURNAME-bq`
-
-## Add a volume
-
-You will need a volume for the secrets.  On the last step you will need to create a *volume*.
-
-
-Go ahead and save.
-
 
 
 ## Go to tasks
@@ -55,6 +47,16 @@ Create task by the name of "t1"
 Use the starter template `Python3-Pyspark2.4-Spark2.4-bq`
 
 ![](../images/wordcount-1-task.png)
+
+## Add a volume
+
+You will need a volume for the secrets.  On the last step you will need to create a *volume*.
+
+Use the dropdown for the secrets
+
+
+Go ahead and save.
+
 
 
 
