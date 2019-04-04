@@ -75,6 +75,20 @@ Make changes to the main.py file by copying [this file](./src/main.py)
 
 Also go ahead and add the data which is [here](./sample_movielens_ratings.txt)
 
+## Copy the file
+
+copy the file src/main.py to the repo.
+
+## Edit the requirements.txt file in the repo
+
+You will need to add the following:
+
+```text
+numpy
+pandas
+```
+
+
 
 ## Run the Workflow
 

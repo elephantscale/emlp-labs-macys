@@ -37,7 +37,13 @@ http://dev.emlp.macysdev.net/emlp
 
 Call it `YOURNAME-bq`
 
+## Add a volume
+
+You will need a volume for the secrets.  On the last step you will need to create a *volume*.
+
+
 Go ahead and save.
+
 
 
 ## Go to tasks
