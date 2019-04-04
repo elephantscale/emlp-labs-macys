@@ -6,6 +6,12 @@ Use your Macy's credentials
 
 ## Step 2: Enter EMLP
 
+Go to `http://stage.emlp.macysdev.net/emlp`
+
+```text
+http://stage.emlp.macysdev.net/emlp
+```
+
 ![](../images/helloworld1.png)
 
 ## Step 3: Add new Pipeline
