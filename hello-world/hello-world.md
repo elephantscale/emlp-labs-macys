@@ -12,6 +12,12 @@ Go to `http://stage.emlp.macysdev.net/emlp`
 http://stage.emlp.macysdev.net/emlp
 ```
 
+You will probably need to login with your RACID and password
+
+![](../images/login.png)
+
+Here is what the screen should look like:
+
 ![](../images/helloworld1.png)
 
 ## Step 3: Add new Pipeline
