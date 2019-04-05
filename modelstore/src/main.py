@@ -19,6 +19,8 @@ logging.basicConfig(level=logging.INFO)
 
 LOG = logging.getLogger(__name__)
 
+print("loading emlpfsms")
+
 def fuzzy_matching(mapper, fav_movie, verbose=True):
     """
     return the closest match via fuzzy ratio. If no match found, return None
