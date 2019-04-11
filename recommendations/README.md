@@ -121,7 +121,7 @@ git clone git@code.devops.fds.com:emlp-stage/$YOURNAME-als-spark-ml.git
 ## Copy the files to the repository
 
 ```console
-cp ~/emlp-labs-macys/spark-als/code/* ~/$YOURNAME-als-spark-ml/
+cp -r ~/emlp-labs-macys/spark-als/code/* ~/$YOURNAME-als-spark-ml/
 
 ```
 
