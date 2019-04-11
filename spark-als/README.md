@@ -1,6 +1,6 @@
-# Spark Wordcount
+# Spark ALS
 
-Here we are going to do a spark wordcount example
+Here we are going to do a spark ALS example
 
 
 ## clone this repo on your computer
