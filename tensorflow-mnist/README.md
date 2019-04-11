@@ -1,4 +1,4 @@
-# Spark ALS
+# Tensorflow MNIST
 
 
 ## clone this repo on your computer
@@ -46,11 +46,11 @@ http://stage.emlp.macysdev.net/emlp
 
 ![](../images/mnist-2-create-task.png)
 
-![](../images/als-7-createtask1.png)
 
 ## Create a task
 
-![](../images/mnist-3-create-task-name.png)
+![](../images/als-7-createtask1.png)
+
 
 *  tensorflow-task
 
@@ -72,16 +72,13 @@ Repeat the same for als-recommender.
 
 ![](../images/als-8-taskname.png)
 
-## Create 2 Steps
+## Create a Steps
 
 Go to steps:
 ![](../images/mnist-5-create-step.png)
 
 
-Create 2 Steps:
-
-1. `running-als`
-2. `running-knn`
+Create a step:
 
 Just accept defaults for both
 
@@ -90,9 +87,6 @@ Just accept defaults for both
 Here is what is should look like when you create the stps:
 
 ![](../images/mnist-7-step-done.png)
-
-
-
 
 
 ## Go to Gitlab
