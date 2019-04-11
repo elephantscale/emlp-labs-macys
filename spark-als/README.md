@@ -71,7 +71,16 @@ https://code.devops.fds.com/
 
 Go ahead and clone your repo.
 
-## Copy the file and c ommit and push
+## Edit the requirements.txt file in the repo
+
+You will need to add the following:
+
+```text
+numpy
+pandas
+```
+
+## Copy the files and commit and push
 
 copy the file `src/main.py` to the repo.
 copy the data files `src/*.csv` to the repo
@@ -85,17 +94,9 @@ Also go ahead and add the data which is [src/ratings.csv](./src/ratings.csv) and
 
 git add src/*.csv
 git add src/main.py
+git add requirements.txt
 git commit -m "Added source and data file"
 git push
-```
-
-## Edit the requirements.txt file in the repo
-
-You will need to add the following:
-
-```text
-numpy
-pandas
 ```
 
 
