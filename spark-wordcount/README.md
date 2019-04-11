@@ -23,10 +23,10 @@ This environment variable will make life easier. Remember this name that you use
 
 ## Go to EMLP Staging in your browser
 
-Go to [EMLP dev](http://dev.emlp.macysdev.net/emlp)
+Go to [EMLP Staging](http://stage.emlp.macysdev.net/emlp)
 
 ```text
-http://dev.emlp.macysdev.net/emlp
+http://stage.emlp.macysdev.net/emlp
 ```
 
 ## Click on Add New
