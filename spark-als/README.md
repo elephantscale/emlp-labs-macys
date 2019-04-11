@@ -71,13 +71,23 @@ https://code.devops.fds.com/
 
 Go ahead and clone your repo.
 
+## Copy the file and c ommit and push
+
+copy the file `src/main.py` to the repo.
+copy the data files `src/*.csv` to the repo
+
 Make changes to the main.py file by copying [this file](./src/main.py)
 
-Also go ahead and add the data which is [here](./sample_movielens_ratings.txt)
+Also go ahead and add the data which is [src/ratings.csv](./src/ratings.csv) and [src/movies.csv](./src/movies.csv)
 
-## Copy the file
 
-copy the file src/main.py to the repo.
+```bash
+
+git add src/*.csv
+git add src/main.py
+git commit -m "Added source and data file"
+git push
+```
 
 ## Edit the requirements.txt file in the repo
 
